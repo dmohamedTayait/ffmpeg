@@ -1,0 +1,60 @@
+ffmpeg version N-76684-g1fe82ab Copyright (c) 2000-2015 the FFmpeg developers
+  built with gcc 5.2.0 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-w32threads --enable-avisynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libdcadec --enable-libfreetype --enable-libgme --enable-libgsm --enable-libilbc --enable-libmodplug --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-libzimg --enable-lzma --enable-decklink --enable-zlib
+  libavutil      55.  6.100 / 55.  6.100
+  libavcodec     57. 15.100 / 57. 15.100
+  libavformat    57. 14.100 / 57. 14.100
+  libavdevice    57.  0.100 / 57.  0.100
+  libavfilter     6. 15.100 /  6. 15.100
+  libswscale      4.  0.100 /  4.  0.100
+  libswresample   2.  0.101 /  2.  0.101
+  libpostproc    54.  0.100 / 54.  0.100
+Input #0, avi, from 'E:\msalahWS\ffmpeg\test\in\test1.avi':
+  Metadata:
+    comment         : www.dvdvideosoft.com
+    date            : 2014
+    track           : 1
+    encoder         : Lavf57.14.100
+  Duration: 00:05:03.70, start: 0.000000, bitrate: 350 kb/s
+    Stream #0:0: Video: mpeg4 (Simple Profile) (FMP4 / 0x34504D46), yuv420p, 320x240 [SAR 11:12 DAR 11:9], 208 kb/s, 30 fps, 30 tbr, 30 tbn, 30 tbc
+    Stream #0:1: Audio: mp3 (U[0][0][0] / 0x0055), 48000 Hz, stereo, s16p, 128 kb/s
+[libx264 @ 0000000000349860] using SAR=11/12
+[libx264 @ 0000000000349860] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+[libx264 @ 0000000000349860] profile High, level 1.3
+[libx264 @ 0000000000349860] 264 - core 148 r2638 7599210 - H.264/MPEG-4 AVC codec - Copyleft 2003-2015 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'E:\msalahWS\ffmpeg\test\out\test1-1447760303639.mp4':
+  Metadata:
+    comment         : www.dvdvideosoft.com
+    date            : 2014
+    track           : 1
+    encoder         : Lavf57.14.100
+    Stream #0:0: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 320x240 [SAR 11:12 DAR 11:9], q=-1--1, 30 fps, 15360 tbn, 30 tbc
+    Metadata:
+      encoder         : Lavc57.15.100 libx264
+    Stream #0:1: Audio: aac (libvo_aacenc) ([64][0][0][0] / 0x0040), 48000 Hz, stereo, s16, 128 kb/s
+    Metadata:
+      encoder         : Lavc57.15.100 libvo_aacenc
+Stream mapping:
+  Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (mp3 (native) -> aac (libvo_aacenc))
+Press [q] to stop, [?] for help
+frame=  313 fps=0.0 q=29.0 size=     265kB time=00:00:10.52 bitrate= 206.3kbits/s dup=2 drop=0    frame=  552 fps=548 q=29.0 size=     526kB time=00:00:18.48 bitrate= 233.3kbits/s dup=2 drop=0    frame=  803 fps=532 q=29.0 size=     805kB time=00:00:26.86 bitrate= 245.3kbits/s dup=2 drop=0    frame= 1096 fps=546 q=29.0 size=    1096kB time=00:00:36.59 bitrate= 245.3kbits/s dup=2 drop=0    frame= 1377 fps=549 q=29.0 size=    1378kB time=00:00:45.98 bitrate= 245.5kbits/s dup=2 drop=0    frame= 1629 fps=541 q=29.0 size=    1656kB time=00:00:54.38 bitrate= 249.4kbits/s dup=2 drop=0    frame= 1919 fps=547 q=29.0 size=    1945kB time=00:01:04.05 bitrate= 248.8kbits/s dup=2 drop=0    frame= 2165 fps=540 q=29.0 size=    2224kB time=00:01:12.24 bitrate= 252.2kbits/s dup=2 drop=0    frame= 2430 fps=539 q=29.0 size=    2502kB time=00:01:21.07 bitrate= 252.8kbits/s dup=2 drop=0    frame= 2695 fps=538 q=29.0 size=    2790kB time=00:01:29.88 bitrate= 254.3kbits/s dup=2 drop=0    frame= 2969 fps=539 q=29.0 size=    3083kB time=00:01:39.06 bitrate= 255.0kbits/s dup=2 drop=0    frame= 3244 fps=540 q=29.0 size=    3365kB time=00:01:48.21 bitrate= 254.7kbits/s dup=2 drop=0    frame= 3528 fps=542 q=29.0 size=    3671kB time=00:01:57.70 bitrate= 255.5kbits/s dup=2 drop=0    frame= 3789 fps=540 q=29.0 size=    3947kB time=00:02:06.38 bitrate= 255.8kbits/s dup=2 drop=0    frame= 4056 fps=540 q=29.0 size=    4238kB time=00:02:15.28 bitrate= 256.6kbits/s dup=2 drop=0    frame= 4316 fps=539 q=29.0 size=    4514kB time=00:02:23.96 bitrate= 256.8kbits/s dup=2 drop=0    frame= 4565 fps=536 q=29.0 size=    4782kB time=00:02:32.26 bitrate= 257.3kbits/s dup=2 drop=0    frame= 4836 fps=536 q=29.0 size=    5076kB time=00:02:41.28 bitrate= 257.8kbits/s dup=2 drop=0    frame= 5081 fps=534 q=29.0 size=    5360kB time=00:02:49.43 bitrate= 259.2kbits/s dup=2 drop=0    frame= 5412 fps=540 q=29.0 size=    5665kB time=00:03:00.48 bitrate= 257.1kbits/s dup=2 drop=0    frame= 5664 fps=538 q=29.0 size=    5945kB time=00:03:08.89 bitrate= 257.8kbits/s dup=2 drop=0    frame= 5940 fps=539 q=29.0 size=    6240kB time=00:03:18.06 bitrate= 258.1kbits/s dup=2 drop=0    frame= 6236 fps=541 q=29.0 size=    6539kB time=00:03:27.94 bitrate= 257.6kbits/s dup=2 drop=0    frame= 6509 fps=542 q=29.0 size=    6837kB time=00:03:37.05 bitrate= 258.0kbits/s dup=2 drop=0    frame= 6755 fps=539 q=29.0 size=    7124kB time=00:03:45.24 bitrate= 259.1kbits/s dup=2 drop=0    frame= 7014 fps=539 q=29.0 size=    7409kB time=00:03:53.86 bitrate= 259.5kbits/s dup=2 drop=0    frame= 7285 fps=539 q=29.0 size=    7690kB time=00:04:02.91 bitrate= 259.3kbits/s dup=2 drop=0    frame= 7582 fps=541 q=29.0 size=    7981kB time=00:04:12.83 bitrate= 258.6kbits/s dup=2 drop=0    frame= 7854 fps=541 q=29.0 size=    8271kB time=00:04:21.87 bitrate= 258.7kbits/s dup=2 drop=0    frame= 8136 fps=541 q=29.0 size=    8566kB time=00:04:31.28 bitrate= 258.7kbits/s dup=2 drop=0    frame= 8540 fps=550 q=29.0 size=    8972kB time=00:04:44.72 bitrate= 258.2kbits/s dup=2 drop=0    frame= 9060 fps=565 q=29.0 size=    9488kB time=00:05:02.08 bitrate= 257.3kbits/s dup=2 drop=0    frame= 9108 fps=566 q=-1.0 Lsize=    9893kB time=00:05:03.71 bitrate= 266.8kbits/s dup=2 drop=0    
+video:4831kB audio:4746kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 3.297780%
+[libx264 @ 0000000000349860] frame I:41    Avg QP:17.21  size:  7704
+[libx264 @ 0000000000349860] frame P:4166  Avg QP:20.98  size:  1009
+[libx264 @ 0000000000349860] frame B:4901  Avg QP:18.97  size:    87
+[libx264 @ 0000000000349860] consecutive B-frames: 27.4%  1.1%  4.4% 67.1%
+[libx264 @ 0000000000349860] mb I  I16..4: 32.4% 60.8%  6.8%
+[libx264 @ 0000000000349860] mb P  I16..4:  2.3%  3.1%  0.3%  P16..4: 16.4%  6.0%  4.0%  0.0%  0.0%    skip:67.9%
+[libx264 @ 0000000000349860] mb B  I16..4:  0.4%  0.1%  0.0%  B16..8: 13.2%  0.5%  0.1%  direct: 0.3%  skip:85.5%  L0:52.2% L1:43.6% BI: 4.2%
+[libx264 @ 0000000000349860] 8x8 transform intra:53.5% inter:86.5%
+[libx264 @ 0000000000349860] coded y,uvDC,uvAC intra: 39.8% 61.0% 30.1% inter: 6.0% 7.3% 2.0%
+[libx264 @ 0000000000349860] i16 v,h,dc,p: 47% 31% 21%  0%
+[libx264 @ 0000000000349860] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 24% 35%  2%  1%  1%  2%  2%  3%
+[libx264 @ 0000000000349860] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 42% 36%  9%  2%  2%  2%  3%  2%  3%
+[libx264 @ 0000000000349860] i8c dc,h,v,p: 41% 35% 20%  4%
+[libx264 @ 0000000000349860] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0000000000349860] ref P L0: 74.9% 12.7%  8.7%  3.7%
+[libx264 @ 0000000000349860] ref B L0: 82.0% 13.4%  4.6%
+[libx264 @ 0000000000349860] ref B L1: 95.7%  4.3%
+[libx264 @ 0000000000349860] kb/s:130.33

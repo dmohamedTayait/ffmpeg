@@ -1,0 +1,34 @@
+ffmpeg version N-76684-g1fe82ab Copyright (c) 2000-2015 the FFmpeg developers
+  built with gcc 5.2.0 (GCC)
+  configuration: --enable-gpl --enable-version3 --disable-w32threads --enable-avisynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libdcadec --enable-libfreetype --enable-libgme --enable-libgsm --enable-libilbc --enable-libmodplug --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-libzimg --enable-lzma --enable-decklink --enable-zlib
+  libavutil      55.  6.100 / 55.  6.100
+  libavcodec     57. 15.100 / 57. 15.100
+  libavformat    57. 14.100 / 57. 14.100
+  libavdevice    57.  0.100 / 57.  0.100
+  libavfilter     6. 15.100 /  6. 15.100
+  libswscale      4.  0.100 /  4.  0.100
+  libswresample   2.  0.101 /  2.  0.101
+  libpostproc    54.  0.100 / 54.  0.100
+Input #0, avi, from 'E:\msalahWS\ffmpeg\test\in\test2.avi':
+  Metadata:
+    comment         : www.dvdvideosoft.com
+    date            : 2014
+    track           : 1
+    encoder         : Lavf57.14.100
+  Duration: 00:05:03.70, start: 0.000000, bitrate: 350 kb/s
+    Stream #0:0: Video: mpeg4 (Simple Profile) (FMP4 / 0x34504D46), yuv420p, 320x240 [SAR 11:12 DAR 11:9], 208 kb/s, 30 fps, 30 tbr, 30 tbn, 30 tbc
+    Stream #0:1: Audio: mp3 (U[0][0][0] / 0x0055), 48000 Hz, stereo, s16p, 128 kb/s
+Output #0, mp3, to 'E:\msalahWS\ffmpeg\test\out\test2-1447755792116.mp3':
+  Metadata:
+    comment         : www.dvdvideosoft.com
+    TDRC            : 2014
+    TRCK            : 1
+    TSSE            : Lavf57.14.100
+    Stream #0:0: Audio: mp3 (libmp3lame), 48000 Hz, stereo, s16p
+    Metadata:
+      encoder         : Lavc57.15.100 libmp3lame
+Stream mapping:
+  Stream #0:1 -> #0:0 (mp3 (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+size=     367kB time=00:00:23.47 bitrate= 128.2kbits/s    size=     814kB time=00:00:52.05 bitrate= 128.1kbits/s    size=    1259kB time=00:01:20.52 bitrate= 128.1kbits/s    size=    1602kB time=00:01:42.45 bitrate= 128.1kbits/s    size=    2022kB time=00:02:09.38 bitrate= 128.0kbits/s    size=    2471kB time=00:02:38.11 bitrate= 128.0kbits/s    size=    2919kB time=00:03:06.74 bitrate= 128.0kbits/s    size=    3248kB time=00:03:27.84 bitrate= 128.0kbits/s    size=    3697kB time=00:03:56.56 bitrate= 128.0kbits/s    size=    4141kB time=00:04:24.98 bitrate= 128.0kbits/s    size=    4588kB time=00:04:53.59 bitrate= 128.0kbits/s    size=    4746kB time=00:05:03.69 bitrate= 128.0kbits/s    
+video:0kB audio:4746kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.006297%
